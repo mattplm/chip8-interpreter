@@ -1,0 +1,37 @@
+#+TITLE: A basic chip8 interpreter written in C
+
+A very basic chip8 interpreter lacking a couple of simple features. I
+developped it on a weekend as a learning exercise to try my hand at
+emulators and eventually tackle some more challenging architectures.
+
+The only goal of the project was to be able to run [[https://github.com/corax89/chip8-test-rom/][this]] rom. This goal
+as been reached and I may or may not come back to this project to
+implement what's left.
+
+In order to compile this project you will need a C compiler as well as
+the SDL2 library.
+
+* Keys
+
+*Disclaymer*: Keyboard inputs are not handled right now, so this part is
+not very relevant.
+
+I used the following keys for the keypad:
+
+| 4 | 5 | 6 |
+|---+---+---|
+| r | t | y |
+|---+---+---|
+| f | g | h |
+|---+---+---|
+| v | b | n |
+
+This keymap has the advantage to be usable on multiple keyboard
+layouts. If you want to use a different layout, take a look at the
+=keymap= function.
+
+* TODO Things that need to be worked on [0/3]
+
+- [ ] Sound system
+- [ ] Properly support keyboard inputs
+- [ ] Anything else?
